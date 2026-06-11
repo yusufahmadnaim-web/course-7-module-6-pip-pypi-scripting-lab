@@ -45,15 +45,28 @@ pip --version
 Optionally, create a virtual environment:
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate   # Windows
+```
+
+If `python3 -m venv venv` is unavailable in your environment, use:
+
+```bash
+python3 -m virtualenv venv
+source venv/bin/activate
 ```
 
 Install any required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the automation script:
+
+```bash
+python3 -m lib.generate_log
 ```
 
 ## Tasks
